@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-//check neighbours
+//check neighbours for living cells
 c1 = place_meeting(x - cell_size, y - cell_size, obj_cell);
 c2 = place_meeting(x, y - cell_size, obj_cell);
 c3 = place_meeting(x + cell_size, y - cell_size, obj_cell);
@@ -15,7 +13,7 @@ near = c1 + c2 + c3 + c4 + c6 + c7 + c8 + c9
 
 
 //run game of life Rule 4
-		//Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+//Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 if (near == 3)
 	{
 		instance_change(obj_cell, true);
