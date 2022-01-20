@@ -1,6 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 cell_size = sprite_get_width(spr_cell_dead);
 
 //check adjacent blocks for living cells
